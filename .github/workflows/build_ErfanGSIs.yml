@@ -14,9 +14,9 @@ on:
     types: [started]
     
 env:
-  ROM_URL: https://gd-cowtransfer.static.cowtransfer.com/cowtransfer/cowtransfer/06694/e43797abef274c2ba872ca6b156b5c20.zip?response-content-disposition=attachment%3B%20filename%3Dk50.zip%3Bfilename*%3Dutf-8%27%27k50.zip&auth_key=1672086576-0dcc8961a20e47719a5011a1bff37870-0-2b591c1171bdde223fda372b4c6e7102&channel_code=COW_CN_WEB&business_code=COW_TRANSFER&biz_type=1&user_id=1019646117409606694
-  ROM_NAME: MIUI
-  BUILD_TYPE: ab
+  ROM_URL: https://59-47-225-47.pd1.123pan.cn:30443/download-cdn.123pan.cn/123-215/3fd167b0/1828016841-0/3fd167b0f43d5f0c3a410d5dc19948d7/c-m12?v=5&t=1707742921&s=1707742921ab457cb1ec9145c186ed4b8fb59a7727&r=FM4UCD&bzc=2&bzs=313832383031363834313a35343835333331383a313032373631363239333a31383238303136383431&filename=gr.zip&x-mf-biz-cid=01eadce7-7f59-4c6a-bd64-830bcad89a25-73d8e5&auto_redirect=0&ndcp=1&cache_type=1&xmfcid=b3ebb9e5-6838-48be-ae00-56baa524f734-1-abf611255
+  ROM_NAME: Generic
+  BUILD_TYPE: a
   TZ: Asia/Shanghai
 
 jobs:
@@ -61,7 +61,7 @@ jobs:
          run: |
               cd $GITHUB_WORKSPACE/ErfanGSIs/output
               curl -sL https://git.io/file-transfer | sh
-              ./transfer wet ./final/GSI.zip
+              ./transfer gof ./final/GSI.zip
 
          
             
